@@ -1,0 +1,16 @@
+name = "test-hw-13"
+version = "1.0.0"
+
+[deployment]
+permission = "public"
+nodes = 1
+
+[build]
+dir = "build"
+entry = "test-hw-13_debug.wasm"
+command = "npm run build:debug"
+
+[build_release]
+dir = "build"
+entry = "test-hw-13.wasm"
+command = "npm run build:release"
